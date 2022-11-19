@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul>
+                    <a href="index.html">About</a>
+                    <a href="index.html">Gallery</a>
+                    <a href="index.html">Contact</a>
+                </ul>
+            </div>
+        </div>
+        <div id="navbar">
+            <a href="index.html"> <img src="img/logo3.png" id="logo" alt=""></a>
+            <span onclick="openNav()"><img id="burgericon" src="img/BURGER.png" alt=""></span>
+        </div>
+
+        <img src="img/bg-start-oblique.png" id="bg-oblique" alt="">
+
+        <img src="img/img.jpg" id="img1" alt="">
+        <a href="">
+            <h1 id="aboutTitel">About me</h1>
+        </a>
+
+        <p id="p1">
+            Ik ben <span id="name"> Victor Oidtmann </span> en ik specialiseer mijzelf in mijn onderneming waar ik uw
+            horloge herstel, opknap en nog veel meer.
+            <br><br>
+            Ik zoek de horloge naar uw vraag, keuze en budget, ik zoek een bijpassend bandje voor uw horloge en ik doe
+            aan
+            het opknappen en repareren van uw horloges, indien u dit wilt kan ik ook opbergmateriaal zoeken voor u.
+        </p>
+
+
+        <div class="portret column">
+            <figure><img src="img/PORTRET.jpg" id="img2" /></figure>
+            <div>
+
+
+                <div id="more-container">
+                    <a href="index.html">
+                        <img src="img/line-more.png" id="line-more" alt="">
+                        <h2 id="more">More</h2>
+
+                    </a>
+                </div>
+
+
+                <div class="gallery-container">
+                    <div id="image-about-header">
+                        <img src="img/img-header-aboutpage.png" class="header-img" width="100%" alt="">
+                        <h1 id="gallery-h1">Gallery</h1>
+
+
+                    </div>
+
+                </div>
+
+                <div class="contact-container">
+                    <h1 id="Contact">Contact</h2>
+                </div>
+                <div class="contact-container2">
+                    <img src="img/bg-oblique2.png" id="bg-oblique2" alt="">
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="/"></option>
+                            <option value="belgium">Belgium</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="luxembourg">Luxembourg</option>
+                            <option value="germany">Germany</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <footer>
+                        <p> &#169 2022 Victor Oidtmann </p>
+                        <p> E-mail: VictorOidtmann.business@gmail.com </p>
+                        <p> Telefoon: +32 471 85 84 40</p>
+                        <a href="https://www.instagram.com/premier_watches_/">
+                            <img src="img/Instagram-footer.png" id="footer-insta" alt="">
+                        </a>
+                    </footer>
+
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.display = "block";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.display = "none";
+                    }
+                </script>
+</body>
+
+</html>
